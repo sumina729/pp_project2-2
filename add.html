@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+      
+        .text-decoration-none {
+            text-decoration: none!important;
+        }
+        ul {
+            margin-top: 0;
+        }
+
+        
+        .fs-4 {
+            font-size: 1.5rem!important;
+        }
+        .me-md-auto {
+            margin-right: auto!important;
+        }
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type:none;
+        }
+        .nav-pills .nav-link.active, .nav-pills .show .nav-link {
+            color: #fff;
+            background-color: #0d6efd;
+        }
+        
+        table { 
+             width: 100%;
+             border-collapse : collapse; 
+        }
+
+        .nav-pills .nav-link {
+            background: 0 0;
+            border: 0;
+            border-radius: 0.25rem;
+        }
+        ul {
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        .nav-pills .nav-link {
+            background: 0 0;
+            border: 0;
+            border-radius: 0.25rem;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            color: #0d6efd;
+            text-decoration: none;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        }
+        .me-2 {
+            margin-right: 0.5rem!important;
+        }
+        .bi {
+            vertical-align: -0.125em;
+            fill: currentColor;
+        }
+        .text-dark {
+            --bs-text-opacity: 1;
+            color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity))!important;
+        }
+        .py-3 {
+            padding-top: 1rem!important;
+            padding-bottom: 1rem!important;
+        }
+        .d-flex {
+            display: flex!important;
+        }
+        .mb-4 {
+            margin-bottom: 1.5rem!important;
+        }
+        .justify-content-center {
+            justify-content: center!important;
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap!important;
+        }
+        .border-bottom {
+            border-bottom: 1px solid #dee2e6!important;
+        }
+        .align-items-center {
+            align-items: center!important;
+        }
+        .mb-md-0 {
+            margin-bottom: 0!important;
+        }
+
+
+
+        .form-signin {
+            width: 100%;
+            max-width: 300px;
+            padding: 200px;
+            margin: auto;
+        }
+
+        .mb-3, .my-3 {
+            margin-bottom: 1rem!important;
+        }
+
+
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+
+        .font-weight-normal {
+            font-weight: 400!important;
+        }
+
+  
+        .h3, h3 {
+            font-size: 1.75rem;
+        }
+
+
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-signin input[type="email"] {
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .form-signin .form-control {
+            position: relative;
+            box-sizing: border-box;
+            height: auto;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + 0.75rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        button, input {
+            overflow: visible;
+        }
+
+        button, input, optgroup, select, textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        button, select {
+            text-transform: none;
+        }
+        button, input {
+            overflow: visible;
+        }
+        button, input, optgroup, select, textarea {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        button {
+            border-radius: 0;
+        }
+
+        .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+        [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+            cursor: pointer;
+        }
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+        .btn-group-lg>.btn, .btn-lg {
+            padding: 0.5rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: 0.3rem;
+        }
+        .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #212529;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        [type=button], [type=reset], [type=submit], button {
+            -webkit-appearance: button;
+        }
+
+        input[type=checkbox], input[type=radio] {
+            box-sizing: border-box;
+            padding: 0;
+        }
+        .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+
+        .text-muted {
+            color: #6c757d!important;
+        }
+
+        .mt-5, .my-5 {
+            margin-top: 3rem!important;
+        }
+        .mb-3, .my-3 {
+            margin-bottom: 1rem!important;
+        }
+        .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+        .btn-block {
+            display: block;
+            width: 100%;
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn {
+            font-weight: 400;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        }
+        .btn-group-lg>.btn, .btn-lg {
+            padding: 0.5rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: 0.3rem;
+        }
+
+    </style>
+
+    <script language="javascript">
+
+        function alerttest(){
+            alert("영어 단어가 추가 되었습니다!");
+
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Simple header</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          </ul>
+        </header>
+
+        <form class="form-signin">
+            
+            <h1 class="h3 mb-3 font-weight-normal"> 단어 추가</h1>
+
+            <label for = "inputWordEnglish"class = "sr-only">영어 단어</label >
+                <input type = "text"id = "inputWordEnglish"class = "form-control"placeholder = "영어 단어를 입력하세요"required="" autofocus=""/>
+                
+                 <!-- Input field for Korean meaning -->
+                 <label for ="inputWordKorean"class ="sr-only">단어 뜻 </label >
+                 <input type ="text"id ="inputWordKorean"class ="form-control"placeholder ="단어 뜻 을 입여력하세요"required=""/>
+
+                 <label for="inputDifficulty" class="sr-only">난이도</label>
+                 <select id="inputDifficulty" class="form-control">
+                     <option selected>난이도를 선택하세요</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                 </select>
+     
+            <button onclick="alerttest()" class="btn btn-lg btn-primary btn-block" type="submit">단어 추가하기</button>
+            
+            <a href="index.html" class = "btn btn-lg btn-secondary btn-block">목록으로 이동하기</a>
+        </form>
+      </div> ㄷ
+    
+      
+
+      
+</body>
+</html>

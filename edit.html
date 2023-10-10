@@ -49,18 +49,18 @@
 
             <!-- Input field for English word -->
       <label for ="inputWordEnglish"class ="sr-only">영어 단어</label >
-        <input type ="text"id ="inputWordEnglish"class ="form-control"placeholder ="영어 단어를 입력하세요"value = "apple"required="" autofocus="" onclick='clearInput("inputWordEnglish")'/>
+        <input type ="text"id ="inputWordEnglish"class ="form-control"placeholder ="영어 단어를 입력하세요"value = "though"required="" autofocus="" onclick='clearInput("inputWordEnglish")'/>
         
         <!-- Input field for Korean meaning -->
         <label for ="inputWordKorean"class ="sr-only">단어 뜻 </label >
-        <input type ="text"id ="inputWordKorean"class ="form-control"placeholder = "단어 뜻 을 입여력하세요"value = "사과"required="" onclick='clearInput("inputWordKorean")'/>
+        <input type ="text"id ="inputWordKorean"class ="form-control"placeholder = "단어 뜻 을 입여력하세요"value = "...이긴 하지만"required="" onclick='clearInput("inputWordKorean")'/>
 
                  <label for="inputDifficulty" class="sr-only">난이도</label>
                  <select id="inputDifficulty" class="form-control">
                      <option selected>난이도를 선택하세요</option>
                      <option value="1">1</option>
-                     <option value="2" selected>2</option>
-                     <option value="3">3</option>
+                     <option value="2">2</option>
+                     <option value="3"selected>3</option>
                  </select>
      
             <button onclick="alerttest()" class="btn btn-lg btn-primary btn-block" type="submit">단어 수정하기</button>

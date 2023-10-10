@@ -79,6 +79,25 @@
             text-decoration: none;
         }
 
+        .delet-button {
+            display: inline-block;
+            padding: 3px 4px;
+            background-color: #18375a;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 15px;
+            text-decoration: none;
+            border: none;
+
+
+        }
+
+        .delet-button:hover {
+          
+          color:rgb(98, 98, 121);
+        }
+
         table td a {
         color: rgb(0, 0, 0);
       }
@@ -88,6 +107,22 @@
       }
       
     </style>
+
+<script language="javascript">
+
+
+  function alerttest(){
+      
+      if(confirm("단어를 삭제하시겠습니까?") == true){
+        alert("삭제되었습니다.");
+    }
+    else{
+        return ;
+    }
+
+  }
+
+</script>
 </head>
 <body>
     <div class="container">
@@ -137,9 +172,12 @@
             <tr>
               <td>1</td>
               <td>***</td>
-              <td><a href="view.html">data</a></td>
-              <td>placeholder</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td><a href="view.html">though</a></td>
+              <td>...이긴하지만</td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>2</td>
@@ -148,6 +186,7 @@
               <td>visual</td>
               <td>
                 <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
             </td>
             </tr>
             <tr>
@@ -155,98 +194,141 @@
               <td>**</td>
               <td><a href="view.html">rich</a></td>
               <td>dashboard</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
+              
             </tr>
             <tr>
               <td>3</td>
               <td>information</td>
               <td><a href="view.html">placeholder</a></td>
               <td>illustrative</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>4</td>
               <td>text</td>
               <td><a href="view.html">random</a></td>
               <td>layout</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>5</td>
               <td>dashboard</td>
               <td>irrelevant</td>
               <td>text</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>6</td>
               <td>dashboard</td>
               <td>illustrative</td>
               <td>rich</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>7</td>
               <td>placeholder</td>
               <td>tabular</td>
               <td>information</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>8</td>
               <td>random</td>
               <td>data</td>
               <td>placeholder</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>9</td>
               <td>placeholder</td>
               <td>irrelevant</td>
               <td>visual</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>10</td>
               <td>data</td>
               <td>rich</td>
               <td>dashboard</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>11</td>
               <td>information</td>
               <td>placeholder</td>
               <td>illustrative</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>12</td>
               <td>text</td>
               <td>placeholder</td>
               <td>layout</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>13</td>
               <td>dashboard</td>
               <td>irrelevant</td>
               <td>text</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>14</td>
               <td>dashboard</td>
               <td>illustrative</td>
               <td>rich</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
             <tr>
               <td>15</td>
               <td>random</td>
               <td>tabular</td>
               <td>information</td>
-              <td><a href="edit.html" class="modify-button">modify</a></td>
+              <td>
+                <a href="edit.html" class="modify-button">modify</a>
+                <button onclick="alerttest()" class="delet-button" >delet</button>
+              </td>
             </tr>
           </tbody>
         </table>

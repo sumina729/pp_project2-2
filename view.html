@@ -22,8 +22,43 @@
         li{
             color:#ffffff;
         }
+        .bt2 {
 
+            display: inline-block;
+            font-weight: 300;
+            line-height: 1.5;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            background-color: transparent;
+            border: 1px solid transparent;
+            padding: 0.2rem 0.4rem;
+            font-size: 1rem;
+            border-radius: 0.25rem;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+        }
     </style>
+
+<script language="javascript">
+
+
+    function alerttest(){
+        
+      if(confirm("단어를 삭제하시겠습니까?") == true){
+          alert("삭제되었습니다.");
+      }
+      else{
+          return ;
+      }
+  
+    }
+  
+  </script>
 
 </head>
 <body>
@@ -44,7 +79,12 @@
         </header>
 
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
+            <div style="text-align: right;">
+                <a style="color: black;" href="edit.html" class="bt2 btn-lg btn-secondary fw-bold border-white bg-white">edit</a>
+                <button onclick="alerttest()" class="bt2 btn-lg btn-secondary fw-bold border-white bg-white" >delet</button>
+                
+            </div>
+            
           
             <main class="px-3">
               <h1 style="font-size: 7ch">though</h1>
@@ -52,9 +92,12 @@
               <p style="font-size: 2ch" class="lead">2.	(앞에 말한 내용의 어조를 누그러뜨리기 위해 덧붙여) 그래도 …이기는 하다</p>
               <p style="font-size: 2ch" class="lead">3.	(문장 끝에 와서) 그렇지만</p>
               <p style="font-size: 1ch" class="lead">발음 : 미국식 [ ðoʊ ] 영국식 [ ðəʊ ]</p>
-              <div style="text-align: right">  <!-- div 태그 추가 -->
-                <a style="color: black;" href="index.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">목록으로</a>
-             </div>  
+
+              <div>  <!-- div 태그 추가 -->
+                <div style="text-align: center;">
+                    <a style="color: black;" href="index.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">목록으로</a>
+                </div>
+              </div>  
             
             </main>
           

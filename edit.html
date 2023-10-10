@@ -15,8 +15,41 @@
 
     <script language="javascript">
 
-        function alerttest(){
-            alert("영어 단어가 수정 되었습니다!");
+
+        function alerttest(event){
+            
+            event.preventDefault(); // Prevent form from submitting immediately
+
+            var englishWord = document.getElementById('inputWordEnglish').value;
+            var koreanWord = document.getElementById('inputWordKorean').value;
+            var difficulty = document.getElementById('inputDifficulty').value;
+
+            // Check if all fields are filled
+            if (englishWord === '' || koreanWord === '' || difficulty === '난이도를 선택하세요') {
+                alert("영어단어, 단어뜻, 난이도를 다 입력해주세요!");
+                return false;
+            }
+
+            // Check if english word is in English
+            var englishRegex = /^[A-Za-z\s]+$/;
+            if (!englishRegex.test(englishWord)) {
+                alert("영어단어에는 영문만 입력해주세요!");
+                return false;
+            }
+
+
+            var nonEnglishRegex = /^[^A-Za-z]*$/; 
+            if (!nonEnglishRegex.test(koreanWord)) {
+                alert("단어 뜻에는 한글만 입력해주세요!");
+                return false;
+            }
+            
+            if(confirm("단어를 수정하시겠습니까?") == true){
+                alert("수정되었습니다.");
+            }
+            else{
+                return ;
+            }
 
         }
 
@@ -43,7 +76,7 @@
           </ul>
         </header>
 
-        <form class="form-signin">
+        <form class="form-signin" onsubmit="return alerttest(event)">
             
             <h1 class="h3 mb-3 font-weight-normal"> 단어 수정</h1>
 

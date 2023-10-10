@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="my.css"/>
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+
+
+
+          .pagination-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .pagination-button {
+            display: inline-block;
+            padding: .5em 1em;
+            background-color: #f2f2f2;
+            color: #0d6efd;
+            border-radius: .25rem;
+            text-decoration: none;
+        }
+
+        .pagination-button.active,
+        .pagination-button:hover {
+            background-color: #0d6efd;
+            color:#fff !important;   
+        }
+        add-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+
+        .add-button a {
+            display: inline-block;
+            padding: .2em 1em;
+            background-color: #28a745; /* 초록색 */
+            color:#fff; /* 흰색 */
+            border-radius:.25rem;
+            text-decoration:none;  
+            margin-right: 100%;
+        }
+        
+        .table-container {
+          position: relative;
+          margin-top: 10px;
+          margin-left: 20px;
+      }
+
+      .section-title-container {
+          display:flex; 
+          align-items:center; 
+          margin-left:-20px; 
+          margin-bottom:-10px
+      }
+
+      h2.section-title {
+         flex-grow :1 ;
+         margin-left :20px ;
+         margin-bottom :10px ;
+     }
+
+     .modify-button {
+            display: inline-block;
+            padding: 3px 4px;
+            background-color: #a9b1ba;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 15px;
+            text-decoration: none;
+        }
+
+        table td a {
+        color: rgb(0, 0, 0);
+      }
+
+      table td a:hover {
+        color: rgb(98, 98, 121);
+      }
+      
+    </style>
 </head>
 <body>
     <div class="container">
@@ -29,12 +111,12 @@
 
       <div class="table-responsive" style="margin-top: 10px;">
     
-        
-        <table id="data-table" class="table table-striped table-sm">
+        <table style="margin-left: 20%; margin-right: 20%;" id="data-table" class="table table-striped table-sm">
             
             <div class="section-title-container">
+            
                 <!-- 섹션 타이틀 -->
-                <h2 class="section-title">Section title</h2>
+                <h2 style="margin-left: 20%;" class="section-title">단어목록</h2>
 
                 <!-- Add 버튼 -->
                 <div class="add-button">
@@ -44,11 +126,11 @@
         
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
-              <th scope="col">Header</th>
+              <th scope="col">번호</th>
+              <th scope="col">단이도</th>
+              <th scope="col">영어단어</th>
+              <th scope="col">뜻</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody>
@@ -170,12 +252,26 @@
         </table>
       </div>
       
+      
       <div class="pagination-container">
         <a href="#" class="pagination-button active">1</a>
         <a href="#" class="pagination-button">2</a>
         <a href="#" class="pagination-button">3</a>
      </div>
+  
 
+     <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2021 Company, Inc</p>
+      </footer>
+    </div>
     
      
 </body>
